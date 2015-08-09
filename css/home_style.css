@@ -1,0 +1,59 @@
+
+.foot_container{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	}
+.logo{
+	background-size: contain;
+	background-position: center;
+	width: 100%;
+	height:100%;
+	clear: both;
+	}
+a:hover{
+	text-decoration: none;
+	color: gray;
+	}
+a{
+	color: black;
+	}
+
+a.left.carousel-control{
+	background-image: none;}
+a.right.carousel-control{
+	background-image: none;
+	}
+.carousel-inner{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	}
+.navbar{
+	position: relative;
+	width: 100%
+	}
+	
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+	}
+.container{
+	background-color: white;
+	}	
+.foot_container{
+	background-color:white;
+	}
+h1{
+	margin-left:auto;
+	margin-right: auto;
+	text-align: center;
+	color: black;
+	}
+	
+.overview-container{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	}
