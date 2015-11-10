@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/home_style.css">
+    <link rel="stylesheet" type="text/css" href="home_style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	
@@ -14,60 +14,32 @@
 </head>
 
 <body>
-	<div class="container">
-		<div class= "head-container">
-			<div class="logo">
-			<a href="index.html"><h1>Julia Aceves</h1></a>
-			</div>
-		</div>
-		<hr>
-		<br><br>
-		<!---------Navigation Carousel------------> 
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-					<li data-target="#myCarousel" data-slide-to="3"></li>
-				</ol>
-
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
-					<div class="item active">
-						<a href="aboutme.html">Overview</a>
-					</div>
-
-					<div class="item">
-						<a href="resume.html">Resume</a>
-					</div>
-    
-					<div class="item">
-						<a href="samples.html">Portfolio</a>
-					</div>
-
-					<div class="item">
-						<a href="contact.html">Contact</a>
-					</div>
-				</div>
-			 <!-- Left and right controls -->
-			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
+<div id="wrapper">
+	<div id="header">
+		<h1>Julia Aceves</h1>
+		<h3>UX/UI Designer</h3>
+		<ul class="nav">
+			<li><a href="aboutme.html">About</a></li>
+			<li><a href="resume.html">Skills & Background</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+    </br>
+	<div id="content">
+		<!------------------------PROJECTS GRID---------------------->
+		<ul class="rig columns-2">
+			<li>
+				<h4>Free & For Sale</h4>
+				<p>Interaction Designer, Front-End Developer</p>
+			</li>
+			<li>
+				<h4>FeelzApp.</h4>
+				<p>Interaction Designer, UX Researcher</p>
+			</li>
+		</ul>
 	
-	<hr>
-	<!--------------Footer--------------->
-	<footer>
-	<div class="foot_container">
-		<h6>Copyright &copy; 2015 Julia Aceves All rights reserved.</h6>
 	</div>
-	</footer>
-	</div>
+</div>
 </body>
 
 

@@ -6,85 +6,109 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="pages.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-	<div class="container">
-
-		
-		<!-----------NAVIGATION BAR----------------------->
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html">Home</a>
-				</div>
-				
-				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="aboutme.html">Overview</a>
-						<li><a href="resume.html">Resume</a></li>
-						<li><a href="samples.html">Portfolio</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<!-----------------------END OF NAVIGATION BAR----------------------->
-        
-        <!----------------------ABOUT ME-------------------------------------->
-        
-        <div class="row">
-            <div class="col-sm-5">
-                
+        <div id="o-wrapper" class="o-wrapper">
+            <div class="c-buttons">
+                <button id="c-button--push-top" class="c-button"><big>Menu</big></button>
             </div>
-                                            
-            <div class="col-md-6">
-                <h3>Overview</h3>
-                    <p>Hello! My name is Julia Aceves and I am currently
-                        a senior at the University of California, San Diego. 
-                        I am majoring in Cognitive Science with a specialization
-                        in Human-Computer Interaction. I enjoy learning and exploring
-                        the subjects of design and human learning. It truly fascinates
-                        me how, with the proper design, one can create tools that
-                        are both user-friendly and powerful beyond imagination. This is
-                        why I have chosen to pursue a career in User Interface Design
-                        and Web Development. I enjoy working with technology and
-                        absoultely find it critical to run all my ideas and creations
-                        past the every day user to make sure that they are both
-                        innovative and intuitive. I am currently pursuing an internship
-                        or entry-level postion in the fields of UX/UI Design, Web
-                        Design, or Front-End Web Development. Please see my resume
-                        for further details.</p>
-                <h4>Interests and Hobbies</h4>
-                    <p>Art has always played a very important role in my life. I find
-                that art has given me purpose and allowed me to express myself without 
-                limitations. I enjoy music and occasinally pick up my guitar. Concerts 
-                have also had a large influence on my designing style. Through music I
-                found the world of tattoos and I fell in love with the artform. You 
-                will find that my designs have been inspire by the Sacred Geometry and
-                American Traditional style of tattooing. </p>
+        
+            <h2>Hello, my name is Julia.</h2>
+            
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-6">
+                    <p>blah blah blach</p>
+                </div>
+             </div>
+            <h3>My Process</h3>
+            <div class=row>
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-2">
+                    <h4>Observe</h4>
+                </div>
+                <div class="col-sm-2">
+                    <h4>Understand</h4>
+                </div>
+                <div class="col-sm-2">
+                    <h4>Sketch</h4>
+                </div>
+                <div class="col-sm-2">
+                    <h4>Plan</h4>
+                </div>
+                <div class="col-sm-2">
+                    <h4>Create</h4>
+                </div>
             </div>
+            <h3>My Skills</h3>
+            <div class="row">
+                <div class="col-sm-4">
+                    Needfinding</br>
+                    Storyboarding</br>
+                    Personas</br>
+                    Prototyping</br>
+                    User Testing</br>
+                </div>
+                <div class="col-sm-4">
+                    Photoshop</br>
+                    Illustrator</br>
+                    Dreamweaver</br>
+                </div>
+                <div class="col-sm-4">
+                    HTML</br>
+                    CSS</br>
+                    Javascript</br>
+                    PHP</br>
+                    Java</br>
+                </div>
+            </div>
+            
+            
+            
+            
+            <footer>
+	           <div class="foot_container">
+		          <h6>Copyright &copy; 2015 Julia Aceves All rights reserved.</h6>
+	           </div>
+	       </footer>
+            
         </div>
-		<!---------------------END OF ABOUT ME------------------------->
-		<hr>
-	<!--------------Footer--------------->
-	<footer>
-	<div class="foot_container">
-		<h6>Copyright &copy; 2015 Julia Aceves All rights reserved.</h6>
-	</div>
-	</footer>
-	</div>
-		
+        
+        <nav id="c-menu--push-top" class="c-menu c-menu--push-top">
+            <button class="c-menu__close">&larr; Close Menu</button>
+            <ul class="c-menu__items">
+                <li class="c-menu__item"><a href="index.html">Home |</a></li>
+                <li class="c-menu__item"><a href="index.html">Skills & Background |</a></li>
+                <li class="c-menu__item"><a href="index.html">Contact |</a></li>
+                <li class="c-menu__item"><a href="index.html">FeelzApp. |</a></li>
+                <li class="c-menu__item"><a href="index.html">Free & For Sale |</a></li>
+                <li class="c-menu__item"><a href="index.html">Blog</a></li>
+                </ul>
+        </nav>
+        <div id="c-mask" class="c-mask"></div>
+    
+    <script src="menu.js"></script>
+    
+    <script>
+        var pushTop= new Menu({
+            wrapper: '#o-wrapper',
+            type: 'push-top',
+            menuOpenerClass: '.c-button',
+            maskId: '#c-mask'
+        });
+        var pushTopBtn = document.querySelector('#c-button--push-top');
+    
+        pushTopBtn.addEventListener('click', function(e) {
+            e.preventDefault;
+            pushTop.open();
+        });
+    </script>
 </body>
 
 </html>
