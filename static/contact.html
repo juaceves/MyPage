@@ -2,63 +2,76 @@
 <html>
 
 <head>
-	<title>Contact</title>
+	<title>Overview</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="contact.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-	<div class="container">
-
-		
-		<!-----------NAVIGATION BAR----------------------->
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html">Home</a>
-				</div>
-				
-				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav">
-						<li><a href="aboutme.html">Overview</a>
-						<li><a href="resume.html">Resume</a></li>
-						<li><a href="samples.html">Portfolio</a></li>
-						<li class="active"><a href="contact.html">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<!-----------------------END OF NAVIGATION BAR----------------------->
-        
-        <!------------------------CONTACT INFORMATION----------------------->
-        <div class="row">
-            <div class="col-sm-4">
-                <h3>Email</h3>
-                <p>aceves.julia@yahoo.com</p>
+        <div id="o-wrapper" class="o-wrapper">
+            <div class="c-buttons">
+                <button id="c-button--push-top" class="c-button"><big>Menu</big></button>
             </div>
+            
+            <div id="form-main" id="form-div">
+                <h2>Get in touch.</h2>
+            
+                <form class="form" id="form1" action="mail.php" method="POST">
+                    <p class="name" id="name">Name</p> <input type="text" placeholder="Name" name="name">
+                    <p class="email" id="email">Email</p> <input type="text" placeholder="Email" name="email">
+                    <p class="text" id="message">Message</p><textarea name="message" placeholder="Message" rows="6" cols="25"></textarea>
+                    
+                    <div class="submit">
+                        <input type="submit" value="Send" id="button-blue"><input type="reset" value="Clear" id="button-blue">
+                        <div class="ease"></div>
+                    </div>
+                </form>
+    
+            </div>
+            
+            
+            <footer>
+	           <div class="foot_container">
+		          <h6>Copyright &copy; 2015 Julia Aceves All rights reserved.</h6>
+	           </div>
+	       </footer>
+            
         </div>
-		
-		<hr>
-	<!--------------Footer--------------->
-	<footer>
-	<div class="foot_container">
-		<h6>Copyright &copy; 2015 Julia Aceves All rights reserved.</h6>
-	</div>
-	</footer>
-	</div>
-		
+        
+        <nav id="c-menu--push-top" class="c-menu c-menu--push-top">
+            <button class="c-menu__close">X</button>
+            <ul class="c-menu__items">
+                <li class="c-menu__item"><a href="index.html">Home |</a></li>
+                <li class="c-menu__item"><a href="resume.pdf">Resume |</a></li>
+                <li class="c-menu__item"><a href="contact.html">Contact |</a></li>
+                <li class="c-menu__item"><a href="feelzapp.html">FeelzApp. |</a></li>
+                <li class="c-menu__item"><a href="ffs.html">Free & For Sale |</a></li>
+                <li class="c-menu__item"><a href="blog.html">Blog</a></li>
+                </ul>
+        </nav>
+        <div id="c-mask" class="c-mask"></div>
+    
+    <script src="menu.js"></script>
+    
+    <script>
+        var pushTop= new Menu({
+            wrapper: '#o-wrapper',
+            type: 'push-top',
+            menuOpenerClass: '.c-button',
+            maskId: '#c-mask'
+        });
+        var pushTopBtn = document.querySelector('#c-button--push-top');
+    
+        pushTopBtn.addEventListener('click', function(e) {
+            e.preventDefault;
+            pushTop.open();
+        });
+    </script>
 </body>
-
 
 </html>

@@ -112,6 +112,7 @@ body.has-active-menu{
     padding: 0 24px;
     height: 60px;
     line-height: 60px;
+    color: black;
 }
 .c-menu--push-top{
     top: 0;
